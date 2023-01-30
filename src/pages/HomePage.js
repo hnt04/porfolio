@@ -599,37 +599,39 @@ function HomePage() {
                       fontFamily: "Cursive",
                     }}
                   >
-                    <a href="https://www.facebook.com/HNT04/" target="_blank" />
+                    <a href="https://www.facebook.com/HNT04/" target="_blank">
                     <FacebookIcon
                       sx={{
                         paddingTop: "4vh",
                         fontWeight: "200",
                         fontSize: "3vw",
                         fontFamily: "Cursive",
+                        marginRight:"8vw",
                         color: "#064cc4",
                       }}
                     />
-                    <a href="https://t.me/Hnt04" target="_blank" />
+                    <a href="https://t.me/Hnt04" target="_blank">
                     <TelegramIcon
                       sx={{
                         paddingTop: "4vh",
                         fontWeight: "200",
                         fontSize: "3vw",
                         fontFamily: "Cursive",
+                        marginRight:"8vw",
                         color: "rgba(49, 140, 245, 0.911)",
                       }}
-                    />
-                    <a href="https://twitter.com/HNT0411" target="_blank" />
+                    /></a>
+                    <a href="https://twitter.com/HNT0411" target="_blank"></a>
                     <TwitterIcon
                       sx={{
                         paddingTop: "4vh",
                         fontWeight: "200",
-                        marginRight: "5vw",
+                        marginRight: "4vw",
                         fontSize: "3vw",
                         fontFamily: "Cursive",
                         color: "rgba(49, 140, 245, 0.911)",
                       }}
-                    />
+                    /></a>
                   </Typography>
                 </Box>
               </Modal>
