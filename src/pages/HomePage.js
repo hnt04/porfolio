@@ -22,6 +22,7 @@ import Logo from "./Logo";
 import Pdf from "../Huynh Nguyen Thao - CV.pdf";
 import StarIcon from "@mui/icons-material/Star";
 import PhoneAndroidIcon from "@mui/icons-material/PhoneAndroid";
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import EmailIcon from "@mui/icons-material/Email";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import TelegramIcon from "@mui/icons-material/Telegram";
@@ -424,10 +425,11 @@ function HomePage() {
                   sx={{
                     mb: 3,
                     maxHeight: "100%",
-                    height: "80vh",
-                    position: "relative",
-                    margin: "10vh",
-                    position: "relative",
+                    width:"80vw",
+                    height: "90vh",
+                    // position: "absolute",
+                    marginLeft: "16vh",
+                    marginTop:"4vh",
                     background: "#defaee",
                     borderRadius: "50px",
                   }}
@@ -463,7 +465,6 @@ function HomePage() {
                       fontSize: "2vw",
                       fontFamily: "Cursive",
                       display:"flex",
-                      justifyContent:"space-around"
                     }}
                   >
                     <img src={Project1} width="30%"></img>
@@ -606,10 +607,10 @@ function HomePage() {
                         fontWeight: "200",
                         fontSize: "3vw",
                         fontFamily: "Cursive",
-                        marginRight:"8vw",
+                        marginRight:"4vw",
                         color: "#064cc4",
                       }}
-                    />
+                    /></a>
                     <a href="https://t.me/Hnt04" target="_blank">
                     <TelegramIcon
                       sx={{
@@ -617,11 +618,11 @@ function HomePage() {
                         fontWeight: "200",
                         fontSize: "3vw",
                         fontFamily: "Cursive",
-                        marginRight:"8vw",
+                        marginRight:"4vw",
                         color: "rgba(49, 140, 245, 0.911)",
                       }}
                     /></a>
-                    <a href="https://twitter.com/HNT0411" target="_blank"></a>
+                    <a href="https://twitter.com/HNT0411" target="_blank">
                     <TwitterIcon
                       sx={{
                         paddingTop: "4vh",
@@ -630,6 +631,17 @@ function HomePage() {
                         fontSize: "3vw",
                         fontFamily: "Cursive",
                         color: "rgba(49, 140, 245, 0.911)",
+                      }}
+                    /></a>
+                    <a href="https://www.linkedin.com/in/th%E1%BA%A3o-hu%E1%BB%B3nh-299851194/" target="_blank">
+                    <LinkedInIcon
+                      sx={{
+                        paddingTop: "4vh",
+                        fontWeight: "200",
+                        fontSize: "3vw",
+                        fontFamily: "Cursive",
+                        marginRight:"2vw",
+                        color: "#064cc4",
                       }}
                     /></a>
                   </Typography>
