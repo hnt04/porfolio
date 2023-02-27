@@ -477,6 +477,7 @@ function HomePage() {
                     }}>My Final Project is a Private Social at Company. In there, employee can contact, update, follow their work as well as their active in company. Beside that, employee can see members's information through Department and know who the best employees of months are. In daily working, employer can assign tasks for their subordinate and follow up the process.
                     <br />
                     <a href="https://github.com/hnt04/fe-finalproject" target="_blank">View More</a>
+                    <a href="https://fabulous-donut-7600a5.netlify.app/" target="_blank">View Site</a>
                     </Typography>
                   </Box>
 
@@ -500,7 +501,8 @@ function HomePage() {
                       paddingLeft:"5vw"
                     }}>In this page, we can see list of movie, its information and rating. You can also add your favorite movies to your own list
                     <br />
-                    <a href="https://github.com/hnt04/movie-app" target="_blank">View More</a>
+                    <a href="https://github.com/hnt04/movie-app" target="_blank">View My Github</a>
+                    <a href="https://jade-gumdrop-30242b.netlify.app/" target="_blank">View Site</a>
                     </Typography>
                   </Box>
                   </Container>
