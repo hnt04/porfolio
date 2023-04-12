@@ -65,7 +65,7 @@ function HomePage() {
           position: "relative",
           margin: "10vh",
           border: "double 8px #44c278",
-          boxShadow: "24",
+          boxShadow: "20px 20px 0 0 #dcdbdb",
         }}
       >
         <Typography
