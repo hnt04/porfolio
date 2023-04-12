@@ -15,14 +15,14 @@ import {
   TableRow,
   TableCell,
   TableBody,
-  Container
+  Container,
 } from "@mui/material";
 import { Card } from "@mui/material";
 import Logo from "./Logo";
 import Pdf from "../Huynh Nguyen Thao - CV.pdf";
 import StarIcon from "@mui/icons-material/Star";
 import PhoneAndroidIcon from "@mui/icons-material/PhoneAndroid";
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import EmailIcon from "@mui/icons-material/Email";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import TelegramIcon from "@mui/icons-material/Telegram";
@@ -64,35 +64,37 @@ function HomePage() {
           height: "100vh",
           position: "relative",
           margin: "10vh",
-          background: "#bbfad5",
-          border: "dotted 10px #44c278",
+          border: "double 8px #44c278",
+          boxShadow: "24",
         }}
       >
         <Typography
           sx={{
+            color: "gray",
             paddingTop: "10vh",
-            paddingLeft: "12vw",
-            fontWeight: "800",
-            fontSize: "5vw",
-            fontFamily: "Cursive",
+            paddingLeft: "8vw",
+            fontWeight: "500",
+            fontSize: "2vw",
+            fontFamily: "Time New Roman",
           }}
         >
-          Hello,
+          HELLO, MY NAME IS
         </Typography>
         <Typography
           sx={{
             paddingTop: "5vh",
-            paddingLeft: "38vw",
+            paddingLeft: "20vw",
             fontWeight: "800",
             fontSize: "5vw",
             fontFamily: "Cursive",
+            color: "#115944",
           }}
         >
-          I'm Thao Huynh
+          HUYNH NGUYEN THAO
         </Typography>
         <Grid sx={{ display: "flex", justifyContent: "space-between" }}>
           <MenuList>
-            <MenuItem sx={{ marginTop: "1vh", marginLeft: "10vw" }}>
+            <MenuItem sx={{ marginTop: "2vh", marginLeft: "10vw" }}>
               <Button
                 onClick={handleOpenAbout}
                 sx={{
@@ -100,7 +102,11 @@ function HomePage() {
                   fontSize: "2vw",
                   fontFamily: "Serif",
                   color: "#48695b",
-                  "&:hover": { fontWeight: "700" },
+                  "&:hover": {
+                    fontWeight: "700",
+                    borderBottom: "1px solid green",
+                    transform: "rotateZ(358deg)",
+                  },
                 }}
               >
                 About Me
@@ -113,7 +119,7 @@ function HomePage() {
                     height: "80vh",
                     position: "relative",
                     margin: "10vh",
-                    background: "#defaee",
+                    backgroundImage: "linear-gradient(to top, #dff7f0, #ffff)",
                     borderRadius: "50px",
                   }}
                 >
@@ -124,6 +130,7 @@ function HomePage() {
                       fontWeight: "800",
                       fontSize: "5vw",
                       fontFamily: "Cursive",
+                      color: "#384541",
                     }}
                   >
                     About Me
@@ -193,7 +200,12 @@ function HomePage() {
                   fontSize: "2vw",
                   fontFamily: "Serif",
                   color: "#48695b",
-                  "&:hover": { fontWeight: "700" },
+                  "&:hover": {
+                    fontWeight: "700",
+                    borderBottom: "1px solid green",
+                    transform: "rotateZ(358deg)",
+
+                  },
                 }}
               >
                 Skill
@@ -206,7 +218,7 @@ function HomePage() {
                     height: "80vh",
                     position: "relative",
                     margin: "10vh",
-                    background: "#defaee",
+                    backgroundImage: "linear-gradient(to top, #dff7f0, #ffff)",
                     borderRadius: "50px",
                   }}
                 >
@@ -217,6 +229,7 @@ function HomePage() {
                       fontWeight: "800",
                       fontSize: "5vw",
                       fontFamily: "Cursive",
+                      color: "#384541",
                     }}
                   >
                     Skill
@@ -415,7 +428,12 @@ function HomePage() {
                   fontSize: "2vw",
                   fontFamily: "Serif",
                   color: "#48695b",
-                  "&:hover": { fontWeight: "700" },
+                  "&:hover": {
+                    fontWeight: "700",
+                    borderBottom: "1px solid green",
+                    transform: "rotateZ(358deg)",
+
+                  },
                 }}
               >
                 Project
@@ -425,12 +443,13 @@ function HomePage() {
                   sx={{
                     mb: 3,
                     maxHeight: "100%",
-                    width:"80vw",
+                    width: "80vw",
                     height: "90vh",
                     // position: "absolute",
                     marginLeft: "16vh",
-                    marginTop:"4vh",
-                    background: "#defaee",
+                    marginTop: "4vh",
+                    backgroundImage:
+                      "linear-gradient(to bottom, #dff7f0, #ffff)",
                     borderRadius: "50px",
                   }}
                 >
@@ -452,59 +471,96 @@ function HomePage() {
                       fontWeight: "200",
                       fontSize: "1vw",
                       fontFamily: "Cursive",
+                      color: "#384541",
                     }}
                   >
-                    (During my course, I have done some project as final module test...)
+                    (During my course, I have done some project as final module
+                    test...)
                   </Typography>
                   <Container>
-                  <Box
-                    sx={{
-                      paddingTop: "4vh",
-                      textAlign: "center",
-                      fontWeight: "200",
-                      fontSize: "2vw",
-                      fontFamily: "Cursive",
-                      display:"flex",
-                    }}
-                  >
-                    <img src={Project1} width="30%"></img>
-                    <Typography sx={{
-                      paddingTop: "2vh",
-                      fontWeight: "200",
-                      fontSize: "1vw",
-                      fontFamily: "Arial",
-                      paddingLeft:"5vw"
-                    }}>My Final Project is a Private Social at Company. In there, employee can contact, update, follow their work as well as their active in company. Beside that, employee can see members's information through Department and know who the best employees of months are. In daily working, employer can assign tasks for their subordinate and follow up the process.
-                    <br />
-                    <a href="https://github.com/hnt04/fe-finalproject" target="_blank">View More</a> | 
-                    <a href="https://fabulous-donut-7600a5.netlify.app/" target="_blank">View Site</a>
-                    </Typography>
-                  </Box>
+                    <Box
+                      sx={{
+                        paddingTop: "4vh",
+                        textAlign: "center",
+                        fontSize: "2vw",
+                        fontFamily: "Cursive",
+                        display: "flex",
+                      }}
+                    >
+                      <img src={Project1} width="30%" boxShadow="24"></img>
+                      <Typography
+                        sx={{
+                          paddingTop: "2vh",
+                          fontWeight: "200",
+                          fontSize: "1vw",
+                          fontFamily: "Arial",
+                          paddingLeft: "5vw",
+                        }}
+                      >
+                        My Final Project is a Private Social at Company. In
+                        there, employee can contact, update, follow their work
+                        as well as their active in company. Beside that,
+                        employee can see members's information through
+                        Department and know who the best employees of months
+                        are. In daily working, employer can assign tasks for
+                        their subordinate and follow up the process.
+                        <br />
+                        <a
+                          href="https://github.com/hnt04/fe-finalproject"
+                          target="_blank"
+                        >
+                          View More
+                        </a>{" "}
+                        |
+                        <a
+                          href="https://fabulous-donut-7600a5.netlify.app/"
+                          target="_blank"
+                        >
+                          View Site
+                        </a>
+                      </Typography>
+                    </Box>
 
-                  <Box
-                    sx={{
-                      paddingTop: "4vh",
-                      textAlign: "center",
-                      fontWeight: "200",
-                      fontSize: "2vw",
-                      fontFamily: "Cursive",
-                      display:"flex",
-                      justifyContent:"space-around"
-                    }}
-                  >
-                    <img src={Project2} width="30%"></img>
-                    <Typography sx={{
-                      paddingTop: "3vh",
-                      fontWeight: "200",
-                      fontSize: "1vw",
-                      fontFamily: "Arial",
-                      paddingLeft:"5vw"
-                    }}>In this page, we can see list of movie, its information and rating. You can also add your favorite movies to your own list
-                    <br />
-                    <a href="https://github.com/hnt04/movie-app" target="_blank">View My Github</a> | 
-                    <a href="https://jade-gumdrop-30242b.netlify.app/" target="_blank">View Site</a>
-                    </Typography>
-                  </Box>
+                    <Box
+                      sx={{
+                        paddingTop: "4vh",
+                        textAlign: "center",
+                        fontWeight: "200",
+                        fontSize: "2vw",
+                        fontFamily: "Cursive",
+                        display: "flex",
+                        justifyContent: "space-around",
+                      }}
+                    >
+                      <img src={Project2} width="30%"></img>
+                      <Typography
+                        sx={{
+                          paddingTop: "3vh",
+                          fontWeight: "200",
+                          fontSize: "1vw",
+                          fontFamily: "Arial",
+                          paddingLeft: "5vw",
+                        }}
+                      >
+                        In this page, we can see list of movie, its information
+                        and rating. You can also add your favorite movies to
+                        your own list
+                        <br />
+                        <a
+                          href="https://github.com/hnt04/movie-app"
+                          target="_blank"
+                        >
+                          View My Github
+                        </a>{" "}
+                        |
+                         <a
+                          href="https://jade-gumdrop-30242b.netlify.app/"
+                          target="_blank"
+                        >
+                          View Site
+                        </a>
+                      </Typography>
+                    </Box>
                   </Container>
                 </Box>
               </Modal>
@@ -520,7 +576,12 @@ function HomePage() {
                   fontSize: "2vw",
                   fontFamily: "Serif",
                   color: "#48695b",
-                  "&:hover": { fontWeight: "700" },
+                  "&:hover": {
+                    fontWeight: "700",
+                    borderBottom: "1px solid green",
+                    transform: "rotateZ(358deg)",
+
+                  },
                 }}
               >
                 Contact
@@ -536,7 +597,7 @@ function HomePage() {
                     marginTop: "10vh",
                     marginLeft: "24vw",
                     position: "relative",
-                    background: "#defaee",
+                    background: "#edfaf6",
                     borderRadius: "50px",
                   }}
                 >
@@ -603,49 +664,56 @@ function HomePage() {
                     }}
                   >
                     <a href="https://www.facebook.com/HNT04/" target="_blank">
-                    <FacebookIcon
-                      sx={{
-                        paddingTop: "4vh",
-                        fontWeight: "200",
-                        fontSize: "3vw",
-                        fontFamily: "Cursive",
-                        marginRight:"4vw",
-                        color: "#064cc4",
-                      }}
-                    /></a>
+                      <FacebookIcon
+                        sx={{
+                          paddingTop: "4vh",
+                          fontWeight: "200",
+                          fontSize: "3vw",
+                          fontFamily: "Cursive",
+                          marginRight: "4vw",
+                          color: "#064cc4",
+                        }}
+                      />
+                    </a>
                     <a href="https://t.me/Hnt04" target="_blank">
-                    <TelegramIcon
-                      sx={{
-                        paddingTop: "4vh",
-                        fontWeight: "200",
-                        fontSize: "3vw",
-                        fontFamily: "Cursive",
-                        marginRight:"4vw",
-                        color: "rgba(49, 140, 245, 0.911)",
-                      }}
-                    /></a>
+                      <TelegramIcon
+                        sx={{
+                          paddingTop: "4vh",
+                          fontWeight: "200",
+                          fontSize: "3vw",
+                          fontFamily: "Cursive",
+                          marginRight: "4vw",
+                          color: "rgba(49, 140, 245, 0.911)",
+                        }}
+                      />
+                    </a>
                     <a href="https://twitter.com/HNT0411" target="_blank">
-                    <TwitterIcon
-                      sx={{
-                        paddingTop: "4vh",
-                        fontWeight: "200",
-                        marginRight: "4vw",
-                        fontSize: "3vw",
-                        fontFamily: "Cursive",
-                        color: "rgba(49, 140, 245, 0.911)",
-                      }}
-                    /></a>
-                    <a href="https://www.linkedin.com/in/th%E1%BA%A3o-hu%E1%BB%B3nh-299851194/" target="_blank">
-                    <LinkedInIcon
-                      sx={{
-                        paddingTop: "4vh",
-                        fontWeight: "200",
-                        fontSize: "3vw",
-                        fontFamily: "Cursive",
-                        marginRight:"2vw",
-                        color: "#064cc4",
-                      }}
-                    /></a>
+                      <TwitterIcon
+                        sx={{
+                          paddingTop: "4vh",
+                          fontWeight: "200",
+                          marginRight: "4vw",
+                          fontSize: "3vw",
+                          fontFamily: "Cursive",
+                          color: "rgba(49, 140, 245, 0.911)",
+                        }}
+                      />
+                    </a>
+                    <a
+                      href="https://www.linkedin.com/in/th%E1%BA%A3o-hu%E1%BB%B3nh-299851194/"
+                      target="_blank"
+                    >
+                      <LinkedInIcon
+                        sx={{
+                          paddingTop: "4vh",
+                          fontWeight: "200",
+                          fontSize: "3vw",
+                          fontFamily: "Cursive",
+                          marginRight: "2vw",
+                          color: "#064cc4",
+                        }}
+                      />
+                    </a>
                   </Typography>
                 </Box>
               </Modal>
